@@ -19,6 +19,7 @@ Error Handling: Robust against invalid inputs and GUI errors (e.g., _tkinter.Tcl
 
 ## Project Structure
 nlp_project/
+|
 ├── app.py            # Main Tkinter GUI and chatbot logic
 ├── chat.py           # Console-based chatbot (predecessor to app1.py)
 ├── train.py           # Script to train the PyTorch NLU model
