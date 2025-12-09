@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Secure App</title>
+    </head>
+<body>
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="text" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <h3>Search Users</h3>
+    <form method="GET" action="/search">
+        <input type="text" name="query" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+
+    <h3>Command Execution (Restricted)</h3>
+    <form method="POST" action="/execute">
+        <input type="text" name="command" placeholder="Enter command (ls, pwd, whoami)">
+        <input type="submit" value="Execute">
+    </form>
+</body>
+</html>
+
+
+
+
